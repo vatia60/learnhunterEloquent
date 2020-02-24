@@ -13,11 +13,14 @@
 
 Route::get('/', 'indexController@index')->name('index');
 
-Route::get('/book', 'BookController@index')->name('book.index');
-Route::post('/book', 'BookController@create');
+Route::get('/book/create', 'BookController@create')->name('book.create');
+Route::post('/book/create', 'BookController@store');
 
-Route::get('/category', 'CategoryController@category')->name('category');
-Route::post('/category', 'BookController@create');
+Route::get('/category/create', 'CategoryController@create')->name('category.create');
+Route::post('/category/create', 'CategoryController@store');
 
-Route::get('/phone', 'PhoneController@phone')->name('phone');
-Route::post('/phone', 'BookController@create');
+
+Route::get('/phone/create', 'PhoneController@create')->name('phone.create');
+Route::post('/phone/create', 'PhoneController@store');
+Route::get('/allshow', 'PhoneController@show')->name('phone.show');
+

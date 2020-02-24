@@ -1,10 +1,26 @@
 @extends('layouts.master')
 @section('content')
-<div class="book">
+<div class="book padd-60">
  <div class="container">
    <div class="row">
      <div class="col-md-6 offset-md-3">
-       <form action="{{route('book.index')}}" method="post">
+     @if ($errors->any())
+                 <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                   </ul>
+               </div>
+        @endif
+
+        @if(session()->has('message'))
+               <div class="alert alert-{{session('type')}}">
+                    {{session('message')}}
+               </div>
+         @endif
+       <form action="{{route('book.create')}}" method="post">
+       @csrf
          <div class="form-group">
            <input name="book_name" value="{{old('')}}" type="text" class="form-control" placeholder="Book Name">
          </div>

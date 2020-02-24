@@ -13,13 +13,16 @@
                       <a class="nav-link" href="{{route('index')}}">Home</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="{{route('book')}}">Book</a>
+                      <a class="nav-link" href="{{route('book.create')}}">Book</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="{{route('category')}}">Category</a>
+                      <a class="nav-link" href="{{route('category.create')}}">Category</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="{{route('phone')}}">Phone</a>
+                      <a class="nav-link" href="{{route('phone.create')}}">Phone</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{route('phone.show')}}">All Show</a>
                     </li>
                   </ul>
                 </div>

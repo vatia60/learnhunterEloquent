@@ -19,16 +19,24 @@
                     {{session('message')}}
                </div>
          @endif
-       <form action="{{route('phone.create')}}" method="post">
-       @csrf
-         <div class="form-group">
-           <input name="phone" value="{{old('phone')}}" type="text" class="form-control" placeholder="Phone number">
-         </div>
-         <div class="form-group">
-           <input name="phone_id" value="{{old('phone_id')}}" type="text" class="form-control" placeholder="Phone ID">
-         </div>
-         <button type="submit" class="btn btn-success">Send</button>
-       </form>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Phone ID</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach($phone as $phones)
+    <tr>
+      <th scope="row">{{$phones->id}}</th>
+      <td>{{$phones->phone}}</td>
+      <td>{{$phones->phone_id}}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
      </div>
    </div>
  </div>

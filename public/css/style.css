@@ -33,7 +33,9 @@ ul li {
 .bg-light {
     background-color: transparent !important;
 }
-
+.padd-60 {
+    padding: 60px 0;
+}
 
 
 
