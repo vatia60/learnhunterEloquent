@@ -49,4 +49,10 @@ class BookController extends Controller
             return redirect()->back();
         }
     }
+
+    public function show()
+    {
+        $book = Book::all();
+        return view('eloquent.bookshow', compact('book'));
+    }
 }

@@ -19,24 +19,7 @@
                     {{session('message')}}
                </div>
          @endif
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Phone ID</th>
-    </tr>
-  </thead>
-  <tbody>
-  @foreach($phone as $phones)
-    <tr>
-      <th scope="row">{{$phones->id}}</th>
-      <td>{{$phones->phone}}</td>
-      <td>{{$phones->phone_id}}</td>
-    </tr>
-    @endforeach
-  </tbody>
-</table>
+       
      </div>
    </div>
  </div>

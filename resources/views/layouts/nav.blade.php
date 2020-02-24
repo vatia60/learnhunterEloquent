@@ -22,7 +22,16 @@
                       <a class="nav-link" href="{{route('phone.create')}}">Phone</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="{{route('phone.show')}}">All Show</a>
+                      <a class="nav-link" href="{{route('book.show')}}">Book Show</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{route('category.show')}}">Category Show</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{route('phone.show')}}">Phone Show</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">All Show</a>
                     </li>
                   </ul>
                 </div>

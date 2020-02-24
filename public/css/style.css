@@ -4,6 +4,18 @@
 ul li {
     list-style: none;
 }
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0; 
+    padding-left: 0; 
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 1px solid;
+    margin-left: 21px;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem 0 1rem;
+}
 /* ========
    HEADER
 ========== */
@@ -35,6 +47,9 @@ ul li {
 }
 .padd-60 {
     padding: 60px 0;
+}
+.padd-40 {
+    padding: 40px 0;
 }
 
 

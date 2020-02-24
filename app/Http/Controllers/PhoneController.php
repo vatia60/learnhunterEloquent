@@ -7,11 +7,7 @@ use App\Phone;
 
 class PhoneController extends Controller
 {
-    public function show()
-    {
-        $phone = Phone::all();
-        return view('eloquent.allshow', compact('phone'));
-    }
+    
     public function create()
     {
         return view('eloquent.phone');
@@ -46,6 +42,12 @@ class PhoneController extends Controller
 
             return redirect()->back();
         }
+    }
+
+    public function show()
+    {
+        $phone = Phone::all();
+        return view('eloquent.phoneshow', compact('phone'));
     }
 
 

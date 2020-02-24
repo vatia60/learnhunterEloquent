@@ -46,4 +46,9 @@ class CategoryController extends Controller
             return redirect()->back();
         }
     }
+    public function show()
+    {
+        $category = Category::all();
+        return view('eloquent.categoryshow', compact('category'));
+    }
 }
