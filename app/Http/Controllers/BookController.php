@@ -19,12 +19,12 @@ class BookController extends Controller
             'book_name' => 'required',
             'book_author' => 'required',
             'book_title' => 'required',
-            'book_desc' => 'required',
+            'category_id' => 'required',
         ],[
             'book_name.required' => 'Book Name must be needed!',
             'book_author.required' => 'Book author must be needed!',
             'book_title.required' => 'Book title must be needed!',
-            'book_desc.required' => 'Book description must be needed!',
+            'category_id.required' => 'Book description must be needed!',
         ]);
 
         try {
@@ -33,7 +33,7 @@ class BookController extends Controller
             $value->book_name = $request->book_name;
             $value->book_author = $request->book_author;
             $value->book_title = $request->book_title;
-            $value->book_desc = $request->book_desc;
+            $value->book_title = $request->category_id;
             $value->save();
 
             session()->flash('message', 'Successfully created!');

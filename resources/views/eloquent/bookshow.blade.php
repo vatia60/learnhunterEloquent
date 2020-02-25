@@ -29,16 +29,18 @@
                 <th scope="col">Author</th>
                 <th scope="col">Titel</th>
                 <th scope="col">Description</th>
+                <th scope="col">Description</th>
               </tr>
             </thead>
             <tbody>
             @foreach($book as $books)
               <tr>
-                <th scope="row">{{$books->id}}</th>
+                <th>{{$books->id}}</th>
                 <td>{{$books->book_name}}</td>
                 <td>{{$books->book_author}}</td>
                 <td>{{$books->book_title}}</td>
-                <td>{{$books->book_desc}}</td>
+                <td>{{$books->category_id}}</td>
+                <td>{{$books->category->category_slug}}</td>
               </tr>
               @endforeach
             </tbody>
