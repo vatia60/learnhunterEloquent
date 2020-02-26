@@ -31,7 +31,7 @@
            <input name="book_title" value="{{old('')}}" type="text" class="form-control" placeholder="Book Title">
          </div>
          <div class="form-group">
-           <input name="category_id" value="{{old('')}}" type="text" class="form-control" placeholder="Book Description">
+           <input name="category_id" value="{{old('')}}" type="text" class="form-control" placeholder="Book Category ID">
          </div>
          <button type="submit" class="btn btn-success">Send</button>
        </form>

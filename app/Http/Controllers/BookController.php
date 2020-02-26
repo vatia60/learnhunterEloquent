@@ -33,7 +33,7 @@ class BookController extends Controller
             $value->book_name = $request->book_name;
             $value->book_author = $request->book_author;
             $value->book_title = $request->book_title;
-            $value->book_title = $request->category_id;
+            $value->category_id = $request->category_id;
             $value->save();
 
             session()->flash('message', 'Successfully created!');

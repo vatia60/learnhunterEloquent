@@ -3,7 +3,7 @@
 <div class="book padd-60">
  <div class="container">
    <div class="row">
-     <div class="col-md-8 offset-md-2">
+     <div class="col-md-10 offset-md-1">
      @if ($errors->any())
                  <div class="alert alert-danger">
                     <ul>
@@ -28,8 +28,8 @@
                 <th scope="col">Book Name</th>
                 <th scope="col">Author</th>
                 <th scope="col">Titel</th>
-                <th scope="col">Description</th>
-                <th scope="col">Description</th>
+                <th scope="col">Book Category ID</th>
+                <th scope="col">Book Key Word</th>
               </tr>
             </thead>
             <tbody>
